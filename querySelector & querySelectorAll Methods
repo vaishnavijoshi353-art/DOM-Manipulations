@@ -1,1 +1,11 @@
-
+let heading = document.querySelector("#basket-heading");
+heading.style.color = "brown";
+let fruits = document.querySelectorAll(".fruit");
+for (let i = 0; i < fruits.length; i++){
+    if (i % 2 !== 0) {
+        fruits[i].style.backgroundColor = "red";
+        fruits[i].style.color = "white";
+    }
+}
+let ul = document.querySelector(".fruits");
+ul.style.listStyleType = "none";
