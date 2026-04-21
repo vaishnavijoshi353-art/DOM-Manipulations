@@ -1,0 +1,12 @@
+let firstDiv = document.querySelector("#header");
+let subHeading = document.createElement("h3");
+subHeading.textContent = "Buy high quality organic fruits online";
+subHeading.style.fontStyle = "italic";
+let mainHeading = document.querySelector("#main-heading");
+firstDiv.insertBefore(subHeading, mainHeading.nextSibling);
+let secondDiv = document.querySelector("#basket-heading").parentElement;
+let para = document.createElement("p");
+para.textContent = "Total fruits: 4";
+para.id = "fruits-total";
+let ul = document.querySelector(".fruits");
+secondDiv.insertBefore(para, ul);
